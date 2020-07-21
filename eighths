@@ -1,3 +1,4 @@
 while True:
     x = input("What is an eighth of... ")
-    open("eighths.txt","a").write("An eighth of " + x + " is: " + str(int(x)*(1/8)) + ".\n")
+    y = str(int(x)*(1/8))
+    open("eighths.txt","a").write(f"An eighth of {x} is: {y}.\n")
